@@ -62,7 +62,7 @@ header div {
     padding: 20px;
 }
 
-header div:nth-child(3) {
+#hdr-nav {
     display: flex;
     justify-content: end;
     padding-right: 1%;
