@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Plantillas - Recursos para Caballow (Jayang)</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="media/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+    <style>
+        @import "css/main.css";
+        @import "css/templates.css";
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch("header.html")
+                .then(res => res.text())
+                .then(html => document.getElementById("header").innerHTML = html);
+
+            fetch("footer.html")
+                .then(res => res.text())
+                .then(html => {
+                    document.getElementById("footer").innerHTML = html
+                    const fecha = new Date();
+                    document.getElementById("date").textContent = fecha.getFullYear();
+                });
+
+        });
+    </script>
+</head>
+
+<body onload="loadAllEntries()">
+    <header id="header">
+    </header>
+
+    <section>
+        <h1>Plantillas</h1>
+        <p>Estas son las plantillas que puedes usar en tu perfil. ¡Escoge la que más te guste!</p>
+        <div id="entries-container"></div>
+    </section>
+
+    <footer id="footer">
+    </footer>
+    <script src="js/loader.js"></script>
+</body>

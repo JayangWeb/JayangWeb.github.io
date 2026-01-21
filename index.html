@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Recursos para Caballow (Jayang)</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="media/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+    <style>
+        @import "css/main.css";
+        @import "css/templates.css";
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch("header.html")
+                .then(res => res.text())
+                .then(html => document.getElementById("header").innerHTML = html);
+
+            fetch("footer.html")
+                .then(res => res.text())
+                .then(html => {
+                    document.getElementById("footer").innerHTML = html
+                    const fecha = new Date();
+                    document.getElementById("date").textContent = fecha.getFullYear();
+                });
+
+        });
+    </script>
+</head>
+
+<body onload="loadEntries(3)">
+    <header id="header">
+    </header>
+
+    <section id="welcome">
+        <h1>¡Bienvenido/a!</h1>
+        <p>En esta página encontrarás contenido para Caballow (y sus demás versiones).</p>
+        <p>Concretamente, una <strong><a href="tips.html">guía de juego</a></strong> que escribí hace años y <strong><a href="templates.html">plantillas</a></strong> para
+            poner en tu perfil, accesibles desde
+            los botones de arriba.
+        </p>
+        <p>Disfruta del juego 😀</p>
+    </section>
+
+    <section>
+        <h1>Plantillas</h1>
+        <p>Estas son algunas de las plantillas que puedes usar en tu perfil. ¡Escoge la que más te guste!</p>
+        <div id="entries-container"></div>
+        <p><a href="templates.html">Ver todas</a></p>
+    </section>
+
+    <footer id="footer">
+    </footer>
+
+    <script src="js/loader.js"></script>
+</body>

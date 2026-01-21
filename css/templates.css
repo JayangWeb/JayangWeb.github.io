@@ -1,0 +1,94 @@
+#entries-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.entry {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  padding: 5px;
+  border: 2px solid gainsboro;
+  border-radius: 10px;
+}
+
+.entry img {
+  max-width: 300px;
+  max-height: 300px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modal {
+  z-index: 2;
+  position: fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  background: rgba(0,0,0,0.6);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.modal-content {
+  z-index: 2;
+  background: white;
+  padding:40px;
+  border-radius: 40px;
+  max-width:80%;
+  max-height:80%;
+  overflow:auto;
+  position: relative;
+}
+
+.close-btn {
+  position:absolute;
+  top:20px;
+  right:20px;
+  background-color: var(--dark-color);
+  color: white;
+  font-size: medium;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  transition: background-color 250ms;
+  cursor: pointer;
+}
+
+.close-btn, .copy-btn, .download-btn{
+    background-color: var(--mid-color-dark);
+    color: white;
+    font-size: medium;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    transition: background-color 250ms;
+    cursor: pointer;
+}
+
+.preview-btn {
+  background-color: var(--mid-color-dark);
+    color: white;
+    border:none;
+    padding:5px 10px;
+    border-radius: 10px;
+    transition: background-color 250ms;
+    cursor: pointer;
+}
+
+.close-btn:hover,.preview-btn:hover, .copy-btn:hover, .download-btn:hover {
+  background-color: var(--mid-color);
+}
+
+pre {
+  background:#f4f4f4;
+  padding:10px;
+  overflow:auto;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}

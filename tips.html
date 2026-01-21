@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Consejos y trucos - Recursos para Caballow (Jayang)</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="media/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+  <style>
+    @import "css/main.css";
+    @import "css/text.css";
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      fetch("header.html")
+        .then(res => res.text())
+        .then(html => document.getElementById("header").innerHTML = html);
+
+      fetch("footer.html")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("footer").innerHTML = html
+          const fecha = new Date();
+          document.getElementById("date").textContent = fecha.getFullYear();
+        });
+
+    });
+  </script>
+</head>
+
+<body>
+  <header id="header">
+  </header>
+
+  <section>
+    <h1>Consejos y trucos para Jugar a Caballow</h1>
+
+    <h5>Índice</h5>
+    <ul>
+      <li><a href="#recomendaciones-generales-y-reglas">Recomendaciones generales y reglas</a></li>
+      <li><a href="#como-conseguir-equus">Cómo conseguir equus</a></li>
+      <li><a href="#como-conseguir-pases-y-objetos-del-mercado-negro">Cómo conseguir pases y objetos del mercado
+          negro</a></li>
+      <li><a href="#subir-el-prestigio-del-centro-de-equitacion">Subir el prestigio del centro de equitación</a>
+      </li>
+      <li><a href="#entrenamiento-y-cuidados">Entrenamiento y cuidados</a></li>
+      <li><a href="#crianza-blup-habilidades-potencial-genetico">Crianza (BLUP, habilidades, potencial
+          genético)</a></li>
+      <li><a href="#caballos-de-tiro-y-asnos">Caballos de tiro y asnos</a></li>
+      <li><a href="#unicornios">Unicornios</a></li>
+      <li><a href="#xanthos-topacio-escarcha-y-creso">Xanthos, Topacio, Escarcha, Creso y Arquímedes</a></li>
+    </ul>
+
+    <div class="info">
+      <div>
+        <img src="media/info.png">
+        <strong>¿Por qué he creado esta lista de consejos?</strong>
+      </div>
+      <p>Como sabréis los que lleváis jugando desde hace un tiempo, antes existía un foro dentro del juego. En
+        mi opinión, era una de las mejores cosas que tenía Caballow. Podías consultar hilos donde había
+        tutoriales y consejos, participar en pequeños concursos, hablar de cualquier tema, y crear nuevos hilos
+        para hacer preguntas. Ahora existe un <a href="https://discord.com/invite/fuwY27Bjnv">servidor de
+          discord oficial</a> que cumple esa función, pero se perdió mucha información interesante.</p>
+    </div>
+    <hr>
+
+    <h5 id="recomendaciones-generales-y-reglas">Recomendaciones generales y reglas</h5>
+    <p>Si empezaste a jugar hace poco, es recomendable que leas el <a
+        href="https://www.caballow.com/aide/manuelEleveur/">manual del criador</a>. Cuando crees el centro
+      ecuestre, también deberías leer el <a href="https://www.caballow.com/aide/manuelCentre/">manual del centro
+        ecuestre</a>. Si tienes alguna duda, puedes consultar el <a
+        href="https://www.caballow.com/member/helpCenter/">centro de ayuda</a>, donde puedes buscarla o
+      preguntarla si no está.</p>
+
+    <p>Obviamente, <strong>no hagas trampas</strong> en el juego. Existe un sistema de karma, más detalles <a
+        href="https://www.caballow.com/joueur/karma/">aquí</a>.</p>
+
+    <h6>Multicuentas:</h6>
+    <p>Tener multicuentas significa tener más de una cuenta en un servidor. Está completamente prohibido y
+      podrías ser baneado si lo haces. Esto <strong>no</strong> incluye tener cuentas en diferentes servidores /
+      versiones (puedes tener cuenta en Caballow y en Equideow, pero no dos cuentas en Caballow).</p>
+    <p>Dos personas que se conecten al juego desde una misma red (router) o desde un mismo dispositivo tendrán
+      la misma IP (<em>identidad en internet</em>), por lo que ambas cuentas serían sospechosas de multicuenta,
+      lo cual no siempre es verdad (ejemplo: tu hermanx, que vive contigo, también juega a Caballow y tiene su
+      propia cuenta, diferente de la tuya). Para no tener problemas, es recomendable que en estos casos no haya
+      mucha interacción entre esas cuentas (cuidado con las ventas, los regalos...).</p>
+    <p>También se considera multicuenta cuando hay un claro beneficio unilateral (por ejemplo, que una cuenta
+      venda muy buenos caballos / divinos a precios excesivamente bajos en ventas reservadas a otra cuenta),
+      incluso aunque las IPs desde las que se conecten las cuentas no coincidan.</p>
+
+    <div class="danger">
+      <div>
+        <img src="media/danger.png">
+        <strong>No des NUNCA tu contraseña a nadie</strong>
+      </div>
+      <p>No lo hagas aunque te digan que son parte del equipo de Caballow
+        (o te prometan pases, equus, buenos caballos, etc.). Ten cuidado con los ladrones de cuentas y sigue
+        siempre las reglas del juego.</p>
+    </div>
+    <hr>
+
+    <h5 id="como-conseguir-equus">Cómo conseguir equus</h5>
+    <p>Los <em>equus</em> son la moneda principal del juego. Sirven para comprar de todo, excepto objetos del
+      mercado negro (para lo que se necesitarán pases). Existen formas efectivas de conseguir un buen número de
+      <em>equus</em>, estas son algunas:
+    </p>
+
+    <ul>
+      <li>
+        <img src="https://www.caballow.com/media/equideo/image/fonctionnels/20/equus.png" alt="Equus">
+        <strong>Vender buenos caballos:</strong> Si eres capaz de criar caballos con un potencial genético alto
+        para su raza, o los entrenas hasta que tengan un buen nivel de habilidades, seguro que habrá alguien que
+        desee comprarlos. Para saber a qué precio vender un caballo, es recomendable revisar qué precio tienen
+        los caballos a la venta de características parecidas al tuyo.
+      </li>
+      <li>
+        <img src="https://www.caballow.com/media/equideo/image/fonctionnels/20/equus.png" alt="Equus">
+        <strong>Subastar caballos:</strong> Aunque tus caballos tengan pocas habilidades o potencial genético,
+        si los pones a la venta en las subastas por un precio bajo, es muy probable que ganes una cantidad de
+        <em>equus</em> superior a la que obtendrías en ventas directas, ya que al pujar puede subir mucho el
+        precio. Además, los nuevos jugadores solo pueden acceder a este tipo de ventas. Por eso, las subastas
+        resultan útiles para vender caballos menos especiales.
+      </li>
+      <li>
+        <img src="https://www.caballow.com/media/equideo/image/fonctionnels/20/equus.png" alt="Equus">
+        <strong>Participa en competiciones:</strong> Los caballos que participan en competiciones ganan
+        <em>equus</em>, especialmente cuando son de alto prestigio/dificultad y quedan en el primer puesto.
+        Aunque no tengas un caballo élite, puedes sacar algunos <em>equus</em> de esta forma.
+      </li>
+      <li>
+        <img src="https://www.caballow.com/media/equideo/image/fonctionnels/20/equus.png" alt="Equus">
+        <strong>Vender objetos en la tienda:</strong> Puedes vender objetos en la tienda como estiércol y
+        objetos o cultivos producidos en tu centro ecuestre. El precio al que puedes vender será siempre la
+        mitad del precio al que puedes comprar, por ejemplo, si las manzanas cuestan 6 <em>equus</em> en la
+        tienda, tú puedes venderlas por 3 <em>equus</em>.
+      </li>
+      <li>
+        <img src="https://www.caballow.com/media/equideo/image/fonctionnels/20/equus.png" alt="Equus">
+        <strong>Crea tu propio centro ecuestre:</strong> (<a
+          href="https://rentry.co/consejos-caballow-jayang#subir-el-prestigio-del-centro-de-equitación">Cómo
+          subir prestigio</a>) Si todavía no puedes, sigue los demás consejos. Si ya puedes, es muy recomendable
+        tenerlo, ya que te puede proporcionar <em>equus</em> de diversas formas:
+        <ul>
+          <li><strong>Clientes:</strong> Los caballos de los jugadores pueden alojarse en tu centro de
+            equitación pagando la tarifa que tú selecciones (20-200 <em>equus</em> al día). Intenta ofrecer
+            siempre suficiente forraje, avena, zanahorias, afrecho, y equipamiento a un precio competitivo.</li>
+          <li><strong>Prados e invernaderos:</strong> En los prados e invernaderos podrás plantar diferentes
+            tipos de cultivos dependiendo de la estación. Es recomendable plantar manzanas, ya que no hace falta
+            replantarlas tras la cosecha, y se producen muchas. Después se pueden vender para ganar una buena
+            cantidad de <em>equus</em>.</li>
+          <li><strong>Talleres:</strong> En los talleres puedes fabricar muchos objetos que puedes usar para
+            consumo propio, para tu centro ecuestre, o para vender. Centrándonos en el último punto, el objeto
+            que más rentable suele salir es el box de 3 estrellas, aunque requiere una inversión inicial algo
+            elevada (para comprar las materias primas). Si todavía no puedes permitirte gastar tanto en
+            fabricarlos, ten en cuenta que todo lo que fabriques y vendas te hará ir ganando <em>equus</em>.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <img src="https://www.caballow.com/media/equideo/image/fonctionnels/20/equus.png" alt="Equus">
+        <strong>No tires el dinero:</strong> Suena evidente, pero por si acaso... Compra caballos al precio que
+        valen. Si no tienes muchos <em>equus</em>, intenta no comprar caballos que no te vayan a dar
+        rentabilidad simplemente porque te gustan, si es que esa compra te va a dejar con muy poca cantidad de
+        dinero. Sí, es un juego, no hace falta tomarse las cosas <em>tan</em> en serio, pero creo que este juego
+        es mucho más disfrutable si no tienes que contar los <em>equus</em> que te quedan.
+      </li>
+    </ul>
+
+    <hr>
+    <h5 id="como-conseguir-pases-y-objetos-del-mercado-negro">Cómo conseguir pases y objetos del mercado negro <img
+        src="https://www.caballow.com/media/equideo/image/fonctionnels/20/pass.png" alt="Pass"></h5>
+    <div class="danger">
+      <div>
+        <img src="media/danger.png">
+        <strong>Cuidado con conseguir pases gratis desde fuera del juego</strong>
+      </div>
+      <p>
+        Suelen ser estafas para robar cuentas.
+      </p>
+    </div>
+
+    <h6>Pases:</h6>
+    <p>Los pases se pueden conseguir principalmente <a href="https://www.caballow.com/member/pass/">comprándolos</a>, y
+      haciendo los <a href="https://www.caballow.com/daily/">objetivos diarios</a> (excepto para cuentas con pocos días
+      de
+      antigüedad).</p>
+
+    <p>También se pueden conseguir viendo vídeos promocionales o participando en las ofertas de patrocinadores, pero estas dos opciones no son recomendables ya que no suelen funcionar, especialmente las ofertas de patrocinadores (son un caos de redirecciones, anuncios y encuestas para que al final no te den nada...).</p>
+    <p>Puedes vender caballos por pases en las ventas directas y reservadas (en las subastas no se puede si no eres usuario Pegaso o VIP).</p>
+
+    <h6>Objetos del mercado negro:</h6>
+    <p>Una de las mejores formas de conseguir objetos del mercado negro es participar en los eventos.
+      Normalmente, están diseñados para que si juegas todos los días que dure (y sin gastar nada) puedas
+      conseguir la mayor parte de las recompensas (a excepción de los divinos y algunos objetos). Además,
+      algunos eventos resultan muy entretenidos, por lo que sería buena idea intentar participar en todos.</p>
+<p>Los objetos del mercado negro también se pueden obtener en los intercambios, lo que puede ser muy útil si tienes un objeto que no vas a usar y necesitas otro de valor parecido.</p>
+    <h6>Yggdrasil:</h6>
+    <p>El caballo divino Yggdrasil, te proporcionará recompensas (pases u objetos del mercado negro) a medida
+      que crezca. Para obtener a este caballo y envejecerlo es necesario enviar caballos de 25 años o más al
+      cielo.</p>
+    <img src="https://www.caballow.com/media/equideo/image/chevaux/special/300/adulte/arbre-1.png" alt="Yggdrasil">
+
+    <h6>La Perla Negra <img src="https://www.caballow.com/media/equideo/image/produits/20/perle-noire.png"
+        alt="Perla Negra">:</h6>
+
+    <p>Si se te da bien el dibujo y te gusta la idea, puedes adquirir la <a
+        href="https://www.caballow.com/marche/noir/object?qName=perle-noire">Perla Negra</a> para subir tus
+      ilustraciones al juego. Si tu ilustración sale elegida, ganarás 10000 <em>equus</em> además de:
+    <ul>
+      <li><strong>4000 pases</strong> si es una capa de la Manzana de Oro sin límite de usos</li>
+      <li><strong>2000 pases</strong> si es una capa de la Manzana de Oro con un número limitado de usos</li>
+      <li><strong>3000 pases</strong> si es un paisaje para el Rayo de Helios</li>
+    </ul>
+    </p>
+    <p>Si no sale elegida, te devuelven los pases que hayas gastado en comprar la Perla Negra. ¡No pierdes nada!</p>
+    <p>Cada Perla Negra permite subir 1 ilustración. Normalmente el periodo para presentarlas es del 1 al 5 de cada mes.
+    </p>
+    <hr>
+    <h5 id="subir-el-prestigio-del-centro-de-equitacion">Subir el prestigio del centro de equitación</h5>
+    <p>Subir el prestigio te resultará útil para aumentar la cantidad de talleres que puedes utilizar a la vez. Si
+      has leído el
+      <a href="https://www.caballow.com/aide/manuelCentre/?type=section-3-2">manual del centro ecuestre</a>,
+      sabrás que el prestigio depende de 5 factores:
+    </p>
+
+    <ul>
+      <li>
+        <img src="https://www.caballow.com/media/equideo/image/produits/32/abreuvoir.png" alt="">
+        <strong>Comodidad:</strong>
+        Para subir la comodidad deberás ofrecer boxes de 3 estrellas con duchas y abrevaderos (con lecho de lino),
+        además de disponer de suficiente forraje, avena, afrecho, zanahorias, sillas de 3 estrellas, bridas de 3
+        estrellas, alfombras de silla, vendas y orejeras. De esta forma, tendrás la comodidad al máximo, aunque supone
+        una gran inversión, por lo que sería mejor ir haciéndolo poco a poco.
+      </li>
+
+      <li>
+        <img src="https://www.caballow.com/media/equideo/image/produits/32/pre-petit-fertile.png" alt="">
+        <strong>Prados:</strong>
+        Este es el más fácil de mejorar, simplemente debes ofrecer suficientes pastos (1 hectárea por box) que tengan la
+        fertilidad alta (por encima del 90%). Necesitas tener prados en barbecho para poder ir rotando y poder ofrecer
+        siempre pastos fértiles.
+      </li>
+
+      <li>
+        <img src="https://www.caballow.com/media/equideo/image/produits/32/box-18.png" alt="">
+        <strong>Capacidad:</strong>
+        Como indica el manual oficial (enlazado antes), deberías tener 100 boxes, con al menos la mitad (50 boxes)
+        ocupados. Si no tienes suficientes caballos alojados, también puedes alojar a tus propios caballos para llenar
+        más boxes.
+      </li>
+
+      <li>
+        <img src="https://www.caballow.com/media/equideo/image/fonctionnels/32/etoiles.png" alt="">
+        <strong>Habilidades:</strong>
+        Puedes indicar un número de habilidad mínima para que solo caballos con más habilidad puedan alojarse en tu
+        centro. Una práctica común es poner las habilidades mínimas a 0 pero cobrar una tarifa más cara (si es un centro
+        que ofrezca buenos servicios). Si quieres subir el prestigio mediante este punto, necesitas poner un valor de
+        habilidades mínimas algo elevado, o alojar a tus mejores caballos en el centro para subir la media.
+      </li>
+
+      <li>
+        <img src="https://www.caballow.com/media/equideo/image/fonctionnels/32/cso.png" alt="">
+        <strong>Competiciones:</strong>
+        Es probablemente el factor más difícil de controlar, pues para subir el prestigio de las competiciones, hay que
+        subir progresiva y cuidadosamente la dificultad de las mismas. Es buena idea buscar qué razas son las más
+        sobresalientes en cada una de las disciplinas y hacer las competiciones reservadas a esa raza y para caballos
+        con más de 20 victorias. Ve probando y eventualmente conseguirás poder dar escarapelas en alguna de tus
+        competiciones.
+      </li>
+    </ul>
+
+    <p>El prestigio del centro, tanto el general como el de los diferentes apartados, a veces se actualiza de un día
+      para otro. Así que, si has cambiado cosas pero ves que el prestigio no ha subido, vuelve a consultarlo al día
+      siguiente. ¡Buena suerte con tu centro de equitación!</p>
+
+    <hr>
+
+    <h5 id="entrenamiento-y-cuidados">Entrenamiento y cuidados</h5>
+
+    <h6>Escoger especialidad:</h6>
+    <p>Dependerá de las mejores habilidades que tiene tu caballo.
+      Una lista con las habilidades tenidas en cuenta en cada disciplina:</p>
+
+    <ul>
+      <li>
+        <img src="https://www.caballow.com/media/equideo/image/fonctionnels/20/specialisation-western.png" alt="">
+        <strong>Monta western</strong>
+        <ul>
+          <li><strong>Barrel racing:</strong> velocidad, galope, resistencia</li>
+          <li><strong>Cutting:</strong> resistencia, doma, velocidad</li>
+          <li><strong>Reining:</strong> doma, trote, salto</li>
+          <li><strong>Trail class:</strong> galope, doma, resistencia</li>
+          <li><strong>Western pleasure:</strong> trote, resistencia, doma</li>
+        </ul>
+      </li>
+
+      <li>
+        <img src="https://www.caballow.com/media/equideo/image/fonctionnels/20/specialisation-classique.png" alt="">
+        <strong>Monta clásica</strong>
+        <ul>
+          <li><strong>Trote:</strong> trote, velocidad, doma</li>
+          <li><strong>Galope:</strong> galope, velocidad, doma</li>
+          <li><strong>Cross:</strong> resistencia, doma, salto</li>
+          <li><strong>CSO:</strong> salto, velocidad, doma</li>
+          <li><strong>Doma:</strong> doma, trote, galope</li>
+        </ul>
+      </li>
+    </ul>
+
+    <p>Para ver las mejores habilidades por raza, consulta el
+      <a href="https://www.caballow.com/communaute/?type=tab-chevaux">directorio</a>.
+    </p>
+
+    <h6>Rutina:</h6>
+    <p>Algunos consejos generales para aprovechar bien el tiempo son:</p>
+    <ul>
+      <li>Empezar el día gastando un poco de energía, hasta llegar a un porcentaje de alrededor del 80% (depende de la
+        cantidad de alimento que necesite el caballo).</li>
+      <li>Alimentar al caballo en ese momento (forraje y avena), ya que, a mayor porcentaje de energía, más energía
+        proporciona la comida. Si se va a llegar al 100% de energía, es mejor gastar un poco más, de forma que quede
+        entre 90 y 99% después de dar de comer.</li>
+      <li>Gastar mucha energía (entrenamiento, paseos, competiciones... Lo que sea que necesite hacer tu caballo).</li>
+      <li>Cuando la energía esté muy baja (entre 0 y 10%), acariciar y dar una zanahoria. Acariciar da más energía
+        cuanto más bajo esté el porcentaje de energía, de forma que con la caricia y la zanahoria llegará al 20%
+        siempre.</li>
+      <li>Puedes darle afrecho para tener un 10% más de energía, y volver a gastarla hasta dejar al caballo con mínimo
+        un 20% de energía.</li>
+      <li>Almohazar, dar de beber y acostar.</li>
+    </ul>
+
+    <p>Estos pasos aplican igual con los potros pero "gastar energía" sería jugar.</p>
+    <p>Si el caballo tiene Talón de Aquiles, puedes ignorar el mínimo del 20% de energía y la hora al acostarlo.
+      En caso contrario, hay que tener cuidado con el tiempo, especialmente cuando se participa en muchas competiciones,
+      ya que estas apenas gastan energía pero consumen 2 horas, por lo que tu caballo podría acostarse más tarde de lo
+      que debería.</p>
+    </p>
+    La energía que gasta cada caballo puede ser diferente, pero normalmente es:
+    <ul>
+      <li><strong>Paseos:</strong> 9% por cada media hora.</li>
+      <li><strong>Entrenamiento:</strong>
+        <ul>
+          <li><strong>Resistencia:</strong> 8% por cada media hora.</li>
+          <li><strong>Velocidad:</strong> 8% por cada media hora.</li>
+          <li><strong>Doma:</strong> 5% por cada media hora.</li>
+          <li><strong>Galope:</strong> 7% por cada media hora.</li>
+          <li><strong>Trote:</strong> 7% por cada media hora.</li>
+          <li><strong>Salto:</strong> 7% por cada media hora.</li>
+
+        </ul>
+      </li>
+      <li><strong>Competiciones:</strong> Depende de muchos factores, pero habitualmente se encuentra entre 10% y 20%.
+      </li>
+      <li><strong>Montas:</strong> Aproximadamente 25%</li>
+      <li><strong>Partos:</strong> Aproximadamente 40%</li>
+    </ul>
+
+    <hr>
+
+    <h5 id="crianza-blup-habilidades-potencial-genetico">Crianza (BLUP, habilidades, potencial genético)</h5>
+    <p>Lee la <a href="https://www.caballow.com/aide/manuelEleveur/?type=section-4-2">página sobre genética del manual
+        del
+        criador</a> para entender qué son potencial genético (PG), habilidades/competencias innatas (HI) y demás
+      términos utilizados en esta guía.</p>
+
+
+
+    <h6>BLUP:</h6>
+    <p>El BLUP de los padres determina parte del potencial genético (PG) y las habilidades innatas (HI) del potro. Un BLUP muy bajo en los padres (0 o menos), hará que los potros no tengan HI ni mayor PG, mientras que un BLUP alto hará que el potro tenga mejores HI y mayor PG. Por eso, siempre es mejor tener un BLUP alto, intentando que esté al máximo.
+    </p><p>Cómo tener el BLUP al máximo:</p>
+
+    <ul>
+      <li>El caballo debe tener <strong>10 años o más</strong>.</li>
+      <li>El caballo debe haber quedado primero en <strong>20 competiciones</strong>.</li>
+      <li>Debe tener desarrolladas completamente sus <strong>3 mejores habilidades </strong>(las que mayor valor tengan en el desglose de su PG).
+      <p>
+      "Desarrollar completamente" significa completar el entrenamiento, los paseos y las competiciones (estas dos últimas mientras den habilidades). Completar únicamente el entrenamiento no es suficiente.
+      </p></li>
+    </ul>
+    <p>Estos datos se pueden comprobar pasando el cursor por encima de la barra de BLUP, en la pestaña de Genética del
+      caballo, como se ve en la imagen que aparece a continuación.</p>
+    <div class="info">
+      <div>
+        <img src="media/info.png">
+        <strong>Nota (información no confirmada)</strong>
+      </div>
+      <p>
+        Según los antiguos foros, si no recuerdo mal, el PG del potro si sus padres tienen el BLUP al máximo sería un 4% mayor de lo que tendría con un BLUP de 0, y viceversa: si los padres tienen el BLUP al mínimo (-100), el potro tendrá un 4% menos de PG. No lo recuerdo bien, así que prefiero que quede más como una pequeña nota que como información fiable.
+      </p>
+    </div>
+
+    <img src="https://i.ibb.co/RPLCrM9/a.png" alt="BLUP y potencial genético">
+
+    <h6>Potencial genético (PG):</h6>
+    <p>No se detallará qué es ya que eso está bien explicado en el manual del criador. Nos centraremos en el cálculo:</p><p>
+El potencial genético de un potro será aproximadamente la media de los potenciales de los padres (considerando la explicación del BLUP anterior).
+Si partes de una yegua con un PG mediocre (como la yegua inicial que te dan cuando empiezas la partida, o un intento de unicornio fallido), lo ideal sería intentar montarla con un semental de su misma raza y PG muy elevado, para que el PG del potro sea mayor que el de la madre.</p><p>
+Si vamos teniendo nuevas potrancas, cada vez con mayor PG, podremos empezar a criar caballos muy buenos sin necesidad de comprarlos (sólo tendrías que invertir equus en las montas, en los partos y en los cuidados de los caballos).</p>
+
+    <h6>Habilidades:</h6>
+    <p>Depende del potencial genético hasta qué punto se pueden subir las habilidades. Si el caballo tiene muchas habilidades innatas, éstas se sumarán al máximo de potencial genético. Con un ejemplo se ve mejor: si tenemos un potro recién nacido que tiene 4000 de habilidades innatas, y su potencial genético es de 15000, cuando crezca y tenga las habilidades completamente desarrolladas, podrá llegar a 19000 de habilidades. Esto funciona así también para cada habilidad desglosada (resistencia, trote, etc.).
+    </p><p>Los paseos por la playa pueden resultar interesantes (una vez tu caballo haya desarrollado al máximo sus habilidades) porque, aunque mantengan el cómputo de habilidades totales al mismo valor, puedes darle más peso a las habilidades que prefieras. Por ejemplo, si tienes un caballo que destaca en CSO, podría serte útil quitarle resistencia y añadirle salto.
+</p><p>Se pueden dar bonificaciones (fusta, espuelas, algunos objetos del mercado negro, etc.).</p>
+
+    <img src="https://i.ibb.co/hyJcmh6/a.png" alt="Habilidades con bonificaciones">
+
+    <hr>
+
+    <h5 id="caballos-de-tiro-y-asnos">Caballos de tiro y asnos</h5>
+    <p><a href="https://www.caballow.com/aide/manuelEleveur/?type=section-4-1#anchor5">Página del manual del
+        criador</a></p>
+
+    <p>Como se indica en el manual, tanto asnos como caballos de tiro pueden reproducirse solo 3 veces en su vida. Esto incluye las montas que ofrecen los sementales, y las montas que reciben las yeguas.</p>
+<p>Si quieres comenzar a criar caballos de tiro (o asnos), tienes que comprar una yegua y un semental de la raza que quieras criar (a veces, el juego te los puede dar en eventos). También puedes comprar solo una yegua y montarla con el semental de otro jugador, pero eso seguramente te salga muy caro (nadie quiere gastar montas de sus sementales a no ser que pagues muy bien). Además, no suelen ofrecerse montas públicas, por lo que tendrás que hablar con otro jugador para realizar la monta privada.</p>
+    <p>Mucho cuidado al comprar caballos de tiro o asnos para criar, pues no aparece el número de montas directamente en la página de ventas. En los criterios de búsqueda, hay una casilla que pone "montas restantes". Es recomendable marcarla cuando vayas a comprar caballos de tiro o asnos para no cometer errores al comprar. Lo mejor es que intentes comprarlos con 0 montas para poder criar sin problemas.</p>
+
+    <img src="https://i.ibb.co/gZsCMP9/a.png" alt="Filtro de montas">
+    <p>
+      Desde el perfil del caballo puedes ver cuántas montas tiene en la sección de Reproducción.
+    </p>
+    <p>
+      <a href="https://www.caballow.com/dossiers/race?qName=donkey">Asno</a>,
+      <a href="https://www.caballow.com/dossiers/race?qName=banei">Ban'ei</a>,
+      <a href="https://www.caballow.com/dossiers/race?qName=drum-horse">Drum Horse</a>,
+      <a href="https://www.caballow.com/dossiers/race?qName=percheron">Percherón</a>,
+      <a href="https://www.caballow.com/dossiers/race?qName=shire">Shire</a>
+    </p>
+
+    <hr>
+
+    <h5 id="unicornios">Unicornios</h5>
+    <p><a href="https://www.caballow.com/aide/manuelEleveur/?type=section-4-1#anchor4">Página del manual del
+        criador</a></p>
+<p>Las sesiones de monta y los tiempos están explicados en el enlace anterior.</p>
+    <p>La probabilidad de que tu yegua de unicornio tenga un potro unicornio es de 1 entre 5 (20%), y si eres usuario VIP, es de 1 entre 4 (25%). Si utilizas el <a href="https://www.caballow.com/marche/noir/object?qName=don-hestia">don de Hestia</a>, el próximo potro de tu yegua será un unicornio con un 100% de probabilidad. Este objeto no se puede comprar en el mercado negro.</p>
+<p>Ya que los unicornios son difíciles de criar y mucho menos comunes que los caballos normales, su precio es mayor incluso aunque tengan bajo potencial genético.</p>
+    <div class="info">
+      <div><img src="media/info.png"><strong>¿Uni-qué?</strong></div>
+      <p>Los "unifail" son caballos normales descendientes de unicornios.</p>
+    </div>
+
+    <hr>
+
+    <h5 id="xanthos-topacio-escarcha-y-creso">Xanthos, Topacio, Escarcha y Creso</h5>
+
+    <h6>Xanthos:</h6>
+    <p><em>Xanthos es un caballo divino que adora que lo acaricien. Cualquier jugador puede acariciar a un Xanthos en su página de perfil pública.
+Además, Xanthos regala un cuerno de la abundancia a los jugadores más afortunados.
+Los demás recibirán 10 puntos de energía de Xanthos para su caballo más joven.</em></p>
+<p><a href="https://www.caballow.com/communaute/?type=tab-chevaux&search=xanthos">» Directorio con todos los Xanthos de Caballow...</a></p>
+<p>Para hacerlo, entra al perfil de un Xanthos y haz click en el botón "Acariciar". Puedes acariciar a cinco Xanthos al día (aunque solo el primero te dará recompensas).</p>    
+<img src="https://www.caballow.com/media/equideo/image/chevaux/special/300/adulte/xanthos.png" alt="Xanthos">
+
+    <h6>Topacio:</h6>
+    <p><em>Topacio dará 10 pases a los jugadores más afortunados de entre los que le hayan enviado felicitaciones. Los demás recibirán dinero.</em></p>
+<p><a href="https://www.caballow.com/communaute/?type=tab-chevaux&search=topaze">» Directorio con todos los Topacio de Caballow...</a></p>
+<p>Para hacerlo, entra al perfil de un Topacio y haz click en el botón "Felicitar". Puedes felicitar a cinco Topacio al día.</p>    
+<img src="https://www.caballow.com/media/equideo/image/chevaux/special/300/adulte/topaze.png" alt="Topacio">
+
+    <h6>Escarcha:</h6>
+    <p><em>Cada día puedes descongelar a Escarcha desde su perfil público y tratar de encontrar una Manta de Hipnos. El día 1 de cada mes, cuando se actualiza la web, se ofrece una Escarcha a uno de los jugadores que la hayan descongelado durante el mes anterior.</em></p>
+    <p><a href="https://www.caballow.com/communaute/?type=tab-chevaux&search=givre">» Directorio con todas las Escarcha de Caballow...</a></p>
+<p>Para hacerlo, entra al perfil de una Escarcha y haz click en el botón "Descongelar". Sólo se puede descongelar una Escarcha al día.</p>
+    <img src="https://www.caballow.com/media/equideo/image/chevaux/special/300/adulte/givre.png" alt="Escarcha">
+
+    <h6>Creso:</h6>
+    <p><em>El día 13 de cada mes a la hora a la que se actualiza el sitio web, Creso proporcionará a su dueño 100 pases, pero solo si este se ha conectado el día anterior. Si el 13 cae en viernes, Creso proporcionará a su dueño 200 pases.
+Todos los meses, un caballo de entre los que llevan el nombre Creso Júnior se transforma en Creso.</em></p>
+<p>Es buena idea que al menos uno de tus caballos tenga el nombre Creso Júnior, así, podrías conseguir este divino (si tienes suerte).</p>
+    <img src="https://www.caballow.com/media/equideo/image/chevaux/special/300/adulte/cresus.png" alt="Creso">
+
+    <h6>Arquímedes:</h6>
+    <p><em>Cada día, Arquímedes ofrece 1 punto de envejecimiento a todos los jugadores que respondan correctamente a sus preguntas.</em></p>
+    <p><a href="https://www.caballow.com/communaute/?type=tab-chevaux&search=archimede">» Directorio con todos los Arquímedes de Caballow...</a></p>
+    <img src="https://www.caballow.com/media/equideo/image/chevaux/special/300/adulte/archimede.png" alt="Arquímedes">
+
+
+  </section>
+
+  <footer id="footer">
+  </footer>
+
+</body>
+
+</html>
